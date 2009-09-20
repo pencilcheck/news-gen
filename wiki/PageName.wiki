@@ -1,10 +1,12 @@
-To-Do List:
+=To-Do List:=
 
 We still need to implement a couple features and fix the bugs we have:
+  * Parser to work for every website.
+    # remove the extra tags(Facebook, twitter etc)
+  * Other back-end stuff.
+  * Implement Local feature.
+  * Loading screen for the page.
+  * Update layout.
+  * Implement delete article feature.
 
-1. *Parser* to work for every website.
-2. Other back-end stuff.
-3. Loading screen for the page.
-4. Update layout.
-5. Implement *Local* feature.
-6. Implement delete article feature.
+_Comment on the wiki and I shall update the to-do list._
