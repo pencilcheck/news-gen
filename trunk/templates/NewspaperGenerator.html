@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>NEWSPAPER GENERATOR</title>
+
+	<!-- Skin CSS file -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.3.1/build/base/base-min.css">
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/assets/skins/sam/skin.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/fonts/fonts-min.css" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/button/assets/skins/sam/button.css" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/menu/assets/skins/sam/menu.css" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+
+
+</head>
+<body class="yui-skin-sam">
+
+	
+	<div id="tools-dialog" style="visibility:hidden;">
+	    <div class="hd">Newspaper Generator</div>
+
+	    <div class="bd">
+    <form name="FillForm" id="FillForm" method="POST">
+	         <fieldset>
+				<legend>Search for article(s):</legend>
+                    <input value="News" type="text" name="search" id="search"  maxlength="100" onfocus=value="">
+			</fieldset>
+
+
+            <fieldset>
+	            <legend>Newspaper Layout:</legend>
+	            <select id="layoutDoc" name="layoutDoc">
+	                <option value="none">No article(s)</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	                <option value="5">5</option>
+	                <option value="6">6</option>
+	                <option value="7">7</option>
+	                <option value="8">8</option>
+	                <option value="9">9</option>
+	                <option value="10">10</option>
+	                <option value="11">11</option>
+	                <option value="12">12</option>
+	                <option value="13">13</option>
+	                <option value="14">14</option>
+	                <option value="15">15</option>
+	                <option value="16">16</option>
+	                <option value="17">17</option>
+	                <option value="18">18</option>
+	                <option value="19">19</option>
+	                <option value="20">20</option>
+	                <option value="21">21</option>
+	                <option value="22">22</option>
+	                <option value="23">23</option>
+	                <option value="24">24</option>
+	                <option value="25">25</option>
+	                <option value="26">26</option>
+	                <option value="27">27</option>
+	                <option value="28">28</option>
+	                <option value="29">29</option>
+	                <option value="30">30</option>
+	            </select>
+	            <select id="layoutTemplate" name="layoutTemplate">
+	                <option value="none">No Columns</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	            </select>
+
+        </fieldset>
+          <fieldset>
+				<legend>Name of Newspaper:</legend>
+				<input value="HackU News" type-"text" name="search" id="search"  maxlength="100" onfocus=value="">
+		</fieldset>
+
+
+                <div>
+                    <input type="submit" name="generatepaper" id="GeneratePaper" value="Generate Newspaper" onClick="javascript:submitform(this.form)">
+                    <!--Reset button-->
+                    <input id="resetbutton1" type="reset" name="resetfield1" value="Reset">
+                </div>
+                <div>
+
+                </div>
+    </form>
+    <form id="PDFsaveview">
+			<fieldset>
+				<legend>Save PDF:</legend>
+				Filename:<span id="fileError"></span><span id="fileSuccess"></span><br />
+				<input value="news.pdf" type-"text" name="filename" id="filename"  maxlength="100">
+
+                <!--save file-->
+    			<button type="button" id="savePDF">Save File</button>
+                <!--view pdf-->
+				<button type="button" id="viewPDF" onClick="window.open('http://www.goldcoastwebdesigns.com/dl/aff-masters.pdf')" >View PDF</button>
+
+			</fieldset>
+	    </form>
+	    </div>
+
+	    <div class="ft"><a href="javascript:YAHOO.NewspaperGenerator.editor.showAbout()">[About]</a>
+    
+    <fieldset>
+    <!-- Begin code - Feedzilla's news widget -->
+    <div align='center' style='width:212px;'>
+    <iframe src='http://www.feedzilla.com/tools/flash_new.asp?myp=homepage&id=2007135020447&code=html&c=&scroll=v&prov=news&width=212&height=300&cat=World%20news&cat2=Top%20stories&num_articles=10&show_video=Yes&show_border=Yes&show_summaries=Yes&show_sources=Yes&show_dates=Yes&title=News%20Feed&keywords=&andor=and&url=&headers_size=14pt&title_size=11pt&title_bold=Yes&font_size=10pt&font_family=Arial&text_alignment=Left&space=Yes&titlecolor=%23000000&fcolor=%230000FF&desccolor=%23000000&sourcecolor=%23FF0000&datecolor=%23999999&bordercolor=%23cccccc&bgcolor=%23FFFFFF&kwd=' width='212' height='300' scrolling='no' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='True' style='border:1px solid #cccccc'>
+    </iframe>
+    <!-- End code - Feedzilla's news widget-->
+    </fieldset></div>
+    	</div>	
+<div id="aboutPanel" style="visibility:hidden;">
+	<div class="hd"></div>
+	<div class="bd"></div>
+
+</div>
+
+</body>
+
+
+<!-- Utility Dependencies -->
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/utilities/utilities.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/container/container-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/menu/menu-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/button/button-beta-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/editor/editor-beta-min.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.3.1/build/logger/logger-min.js"></script>
+<script type="text/javascript" src="static/main.js"></script>
+</html>

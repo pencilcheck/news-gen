@@ -1,0 +1,29 @@
+#tools-dialog fieldset {
+	border: 1px solid #ccc;
+	margin: 2px;
+	padding: 5px;
+	text-align: left;
+}
+#tools-dialog .ft {
+	font-size: .8em;
+	text-align: left;
+}
+#tools-dialog .ft a {
+	text-decoration: none;
+}
+.editable {
+	border:1px dashed #ddd;
+	padding:0.25em;
+	margin-bottom: 5px;
+}
+#fileError {
+	color: red;
+	margin-left: 5px;
+}
+#fileSuccess {
+	color: green;
+	margin-left: 5px;
+}
+#aboutPanel {
+	text-align: left;
+}
