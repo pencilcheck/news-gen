@@ -1,0 +1,10 @@
+To-Do List:
+
+We still need to implement a couple features and fix the bugs we have:
+
+1. *bold*Parser*bold* to work for every website.
+2. Other back-end stuff.
+3. Loading screen for the page.
+4. Update layout.
+5. Implement *bold*Local*bold* feature.
+6. Implement delete article feature.
