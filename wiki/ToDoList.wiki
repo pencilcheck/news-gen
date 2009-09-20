@@ -1,6 +1,3 @@
-#summary To-Do List
-
-
 We still need to implement a couple features and fix the bugs we have:
 
 *Back-End*
