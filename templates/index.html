@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Newspaper Generator - Yahoo! HackU</title>
+		
+		<link rel="stylesheet" type="text/css" href="static/main.css">
+		
+		<script type="text/javascript" src="static/jquery.js"></script>
+		<script type="text/javascript" src="static/jquery.json-2.2.min.js"></script>
+		<script type="text/javascript" src="static/main.js"></script>
+
+	</head>
+	<body>
+		<div id="page">
+			<div id="content">
+				<form method="get" id="search">
+					<br />
+					Topic(s):
+					<br />
+					<input type="text" name="topics" />
+					<br />
+					<div id="advance">
+					<br />
+					Title:
+					<br />
+					<input type="text" name="title" />
+					<br />
+					Column(s):
+					<br />
+					<input type="text" name="column" />
+					<br />
+					# of Article(s):
+					<br />
+					<input type="text" name="articles" />
+					<br />
+					Slogan:
+					<br />
+					<input type="text" name="slogan" />
+					<br />
+					</div>
+					<br />
+					<input id="mySubmit" type="submit" value="Search" name="submit" />
+					<br />
+					<input type="checkbox" name="topics">Local</input>
+				</form>
+				<div id="advance_toggle"><a href="#" id="advance_link">advance on</a></div>
+			</div>
+			<div id="footer"></div>
+		</div>
+		<div id="pdf">
+			<!--<img id="news" src="images/1.png" />-->
+			<!--<img id="news" src="images/2.png" />-->
+		</div>
+	</body>
+</html>
